@@ -1,4 +1,4 @@
-@section('title', __('System Settings'))
+@section('Extraodinário', __('System Settings'))
 <div>
     <h1>{{ __('System Settings') }}</h1>
 

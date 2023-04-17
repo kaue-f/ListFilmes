@@ -1,4 +1,4 @@
-@section('title', ('Lista de Filmes'))
+@section('Extraodinário', ('Lista de Filmes'))
 
     <table class="hover:table-auto">
         <thead>

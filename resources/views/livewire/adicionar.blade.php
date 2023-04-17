@@ -1,4 +1,4 @@
-@section('title', ('Adicionar Filmes'))
+@section('Extraodinário', ('Adicionar Filmes'))
 
 <form action="{{route('dados')}}" method="POST">
 @csrf

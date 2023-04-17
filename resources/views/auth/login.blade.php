@@ -1,11 +1,11 @@
 <x-guest-layout>
     <x-auth-card>
-        @section('title', __('Login'))
+        @section('Extraodinário', __('Login'))
 
     <x-form action="{{ route('login') }}">
 
         @include('errors.messages')
-
+        
         <x-form.input name="email" :label="__('Email')">{{ old('email') }}</x-form.input>
         <x-form.input name="password" :label="__('Password')" type="password" />
 

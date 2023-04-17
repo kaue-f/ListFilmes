@@ -1,4 +1,4 @@
-@section('title', __('Edit Role'))
+@section('Extraodinário', __('Edit Role'))
 <div>
     <p class="mb-5">
         <a href="{{ route('admin.settings.roles.index') }}">{{ __('Roles') }}</a>

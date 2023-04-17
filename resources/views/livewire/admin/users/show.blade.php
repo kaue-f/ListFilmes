@@ -1,4 +1,4 @@
-@section('title', 'Profile')
+@section('Extraodinário', 'Profile')
 <div>
    <p>
        <a href="{{ route('admin.users.index') }}">{{ __('Users') }}</a>
