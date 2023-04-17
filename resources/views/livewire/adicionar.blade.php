@@ -44,8 +44,8 @@
 
     <x-textarea name='sinopse' label="Sinopse" placeholder="Sinopse do Filme" />
 
-    <div class="button">
-        <input type="submit" value="Salvar" style="margin-top: 1rem">
+    <div class="button ">
+        <x-button positive label="Salvar" type="submit" style="margin-top: 1rem" />
     </div>
 </form>
 
