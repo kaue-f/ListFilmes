@@ -31,8 +31,13 @@
               {{$dura->format('H:i:s')}}
             </td>
 
-            <td id="td_genero">{{$filme->genero}}</td>
-
+            <td id="td_genero">
+              @php
+                  $gene = trim($filme->genero, '[]""');
+                  $gene = strtr($gene, '"', " ");
+              @endphp
+              {{$gene}}
+            </td>
             <td id="td_classificacao">{{$filme->classificacao}}</td>
 
             <td id="td_sinopse">

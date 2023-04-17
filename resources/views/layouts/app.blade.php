@@ -31,7 +31,7 @@
                 </div>
             @endauth
 
-            <div id="main" class="w-full bg-gray-100">
+            <div id="main" class="w-full bg-gray-100 dark:bg-gray-950">
 
                 @auth
                     <div class="flex justify-between mb-5 bg-primary border-b-4 border-primary px-2 py-2">

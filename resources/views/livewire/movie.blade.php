@@ -46,11 +46,17 @@
                   {{$lanca->format('d/m/Y')}} 
                   </span></li>
     
-                  <li class="text-lg text-slate-800"> Gênero: <span class="text-lg text-black	">{{$movie->genero}}</span></li>
+                  <li class="text-lg text-slate-800"> Gênero: <span class="text-lg text-black	">
+                  @php
+                    $gene = trim($movie->genero, '[]""');
+                    $gene = strtr($gene, '"', " ");
+                  @endphp
+                  {{$gene}}  
+                  </span></li>
     
                   <li class="text-lg text-slate-800"> Duração: <span class="text-lg text-black	"> 
                   @php
-                  $dura = new DateTime($movie->duracao);
+                    $dura = new DateTime($movie->duracao);
                   @endphp
                   {{$dura->format('H:i:s')}}
                   </span></li>

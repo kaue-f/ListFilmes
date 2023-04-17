@@ -14,7 +14,7 @@
             x-show.transition="isOpen"
             @click.away="isOpen = false"
             class="origin-top-right absolute right-0 mt-1 mr-3 w-48">
-            <div class="relative z-30 rounded-b-md bg-primary border border-gray-100  shadow-xs">
+            <div class="relative z-30 rounded-b-md bg-primary dark:bg-gray-950 border border-gray-100  shadow-xs">
 
                 @can('view_users_profiles')
                     <x-dropdown-link :href="route('admin.users.show', auth()->user())">{{ __('View Profile') }}</x-dropdown-link>
