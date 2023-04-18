@@ -1,6 +1,6 @@
-@section('Extraodinário', ('Lista de Filmes'))
+@section('Yggdrasil', ('Lista de Filmes'))
 
-    <table class="hover:table-auto">
+    <table class="hover:table-auto font-serif">
         <thead>
           <tr>
             <th scope="col" id="th_titulo">Título</th>

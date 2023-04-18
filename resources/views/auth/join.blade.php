@@ -1,6 +1,6 @@
 <x-guest-layout>
     <x-auth-card>
-        @section('title', __('Join'))
+        @section('Yggdrasil', __('Join'))
 
     @include('errors.success')
 
@@ -10,8 +10,8 @@
 
         <x-form.input type="text" :label="__('Name')" name="name">{{ $user->name }}</x-form.input>
         <x-form.input type="text" :label="__('Email')" disabled>{{ $user->email }}</x-form.input>
-        <x-form.input type="password" :label="__('Password')" name='newPassword'></x-form.input>
-        <x-form.input type="password" :label="__('Confirm Password')" name='confirmPassword'></x-form.input>
+        <x-inputs.password type="password" :label="__('Password')" name='newPassword' value="" />
+        <x-inputs.password type="password" :label="__('Confirm Password')" name='confirmPassword' value="" />
 
         <x-button>{{ __('Save Password') }}</x-button>
 

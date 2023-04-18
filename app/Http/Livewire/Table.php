@@ -9,7 +9,7 @@ class Table extends Component
 {
     public function render()
     {
-        $filmes = filme::where('id_user', auth()->user()->id)->get();
+        $filmes = filme::where('id_user', auth()->user()->id)->orderBy('titulo', 'ASC')->get();
 
 
         return view('livewire.table', compact('filmes'));

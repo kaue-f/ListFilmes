@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
 </head>
 <body class="bg-slate-900">
-<section class="menu-filme">
+<section class="menu-filme font-serif">
 <div class="grid grid-rows-3 bg-slate-50 space-x-4 rounded-lg shadow shadow-slate-100">
   
       <!-- Image gallery -->

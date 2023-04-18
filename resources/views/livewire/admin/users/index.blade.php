@@ -1,4 +1,4 @@
-@section('Extraodinário', __('Users'))
+@section('Yggdrasil', __('Users'))
 <div>
     <div class="flex justify-between">
 

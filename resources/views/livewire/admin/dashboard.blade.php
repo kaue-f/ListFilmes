@@ -1,5 +1,5 @@
 <div>
-    @section('Extraodinário', __('Dashboard'))
+    @section('Yggdrasil', __('Dashboard'))
 
     <h1>{{ __('Dashboard') }}</h1>
 

@@ -1,18 +1,18 @@
-@section('Extraodinário', ('Adicionar Filmes'))
+@section('Yggdrasil', ('Adicionar Filmes'))
 
-<form action="{{route('dados')}}" method="POST">
+<form class="font-serif" action="{{route('dados')}}" method="POST">
 @csrf
     <x-input name='titulo' label="Título" placeholder="Título do Filme" />
 
-    <x-input name='capa' class="!pl-[6.5rem]" label="Capa" placeholder="URL da Imagem" prefix="https://www." />
+    <x-input name='capa' label="Capa" placeholder="URL da Imagem" />
 
     <x-datetime-picker
-    name='lancamento'
-    label="Lançamento"
-    without-time
-    display-format="YYYY-MM-DD"
-    placeholder="Ano de Lançamento"
-    wire:model="normalPicker"
+        name='lancamento'
+        label="Lançamento"
+        without-time
+        display-format="YYYY-MM-DD"
+        placeholder="Ano de Lançamento"
+        wire:model="normalPicker"
     />
 
     <x-time-picker 

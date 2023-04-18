@@ -1,4 +1,4 @@
-@section('title', __('Audit Trail'))
+@section('Yggdrasil', __('Audit Trail'))
 <div>
     <h1>{{ __('Audit Trails') }}</h1>
 

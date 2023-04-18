@@ -1,5 +1,5 @@
 <x-guest-layout>
-	@section('title', '2FA')
+	@section('Yggdrasil', '2FA')
 	<x-auth-card>
 		<p>{{ __('Please open your authenticator mobile app and enter the code below') }}.</p>
 

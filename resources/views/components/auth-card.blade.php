@@ -18,7 +18,7 @@
                     <img class="mx-auto" src="{{ Storage::url($loginLogo) }}" alt="{{ config('app.name') }}">
                 </picture>
             @else
-                <h1>{{ config('app.name') }}</h1>
+            <h1>{{ config('app.name') }}</h1>
             @endif
         </a>
     </section>

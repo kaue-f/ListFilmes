@@ -1,13 +1,13 @@
 <x-guest-layout>
     <x-auth-card>
-        @section('Extraodinário', __('Login'))
+        @section('Yggdrasil', __('Login'))
 
     <x-form action="{{ route('login') }}">
 
         @include('errors.messages')
         
-        <x-form.input name="email" :label="__('Email')">{{ old('email') }}</x-form.input>
-        <x-form.input name="password" :label="__('Password')" type="password" />
+        <x-input icon="user" right-icon="pencil" name="email" :label="__('Email')" placeholder="Email" style="margin-block: 1rem"/>{{ old('email') }}
+        <x-inputs.password name="password" :label="__('Password')" type="password" value="" style="margin-block: 0.5rem"/>
 
         <div class="flex justify-between">
             <p><a href="{{ route('password.request') }}">{{ __('Forgot your password?') }}</a></p>
