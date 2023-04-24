@@ -13,7 +13,7 @@ class Movie extends Component
 
     public function render()
     {
-        return view('{{livewire.table');
+        return view('livewire.table');
     }
 
     public function movie($id){
